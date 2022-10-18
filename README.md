@@ -1,0 +1,2 @@
+# NetOfficeOutlookGetAllMailsSample
+NetOfficeを使ったOutlookから全アカウントの全メールを取得する最低限の実装です。
