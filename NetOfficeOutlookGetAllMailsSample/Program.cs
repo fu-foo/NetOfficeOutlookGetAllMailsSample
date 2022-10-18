@@ -23,6 +23,7 @@ namespace Fu.NetOfficeOutlookGetAllMailsSample
             var outlookApplication = new Outlook.Application();
 
             // MAPI取得
+            // 環境によっては事前にOutlook起動が必要？
             var outlookNS = outlookApplication.GetNamespace("MAPI");
 
             // 存在するアカウントで繰り返し
