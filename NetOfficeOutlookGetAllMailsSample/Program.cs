@@ -93,13 +93,13 @@ namespace Fu.NetOfficeOutlookGetAllMailsSample
                     System.Console.WriteLine($"受信時刻[{meetingitem.ReceivedTime}]:題名[{meetingitem.Subject}]:本文[{meetingitem.Body}]");
 
                     // 添付ファイル取得
-                    foreach (var attachments in mailitem.Attachments)
+                    foreach (var attachments in meetingitem.Attachments)
                     {
                         System.Console.WriteLine($"添付ファイル:{attachments.DisplayName}");
                         attachments.Dispose();
                     }
                     // 破棄
-                    mailitem.Attachments.Dispose();
+                    meetingitem.Attachments.Dispose();
                     meetingitem.Dispose();
                 }
             }
